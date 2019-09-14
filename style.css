@@ -1,0 +1,102 @@
+.main {
+    margin: auto;
+    /* background-color: red; */
+    background-color: #00adff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 700px;
+}  
+
+.addElement{
+    margin: 21px;
+}
+
+.addElement h1{
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+#inputAdd{
+    width: 70%;
+    font-size: 21px;
+    outline: none;
+    font-family: cursive;
+}
+#add{
+    font-size: 21px;
+    width: 25%;
+    padding: 6px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color: #ccc;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#add:hover {
+    color: #111;
+}
+#divAdd {
+    background-color: #fff;
+    margin-bottom: -5px;
+    width: 100%;
+    transition: 1s;
+}
+
+#divAdd div {
+    cursor: pointer;
+    margin: 0px;
+    padding: 10px;
+    font-family: sans-serif;  
+    transition: 0.3s;
+}
+/* animations */
+.animationShow {
+    animation-name: show;
+    animation-duration: 0.5s;  
+}
+@keyframes show{
+    from {opacity: 0;};
+    to {opacity: 1;};
+}   
+ 
+/* /// */
+#divAdd div:hover {
+   /* transform: scale(1.0521);   */
+   transform: scale(1.05);
+    
+}
+#divAdd div:nth-of-type(odd){
+    background-color:rgb(240, 239, 239);
+}
+
+#divAdd div:nth-of-type(even){
+    background-color: rgb(218, 216, 216);
+}
+#divAdd div p {
+    font-family: cursive;
+    margin: -10px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+#divAdd  span { 
+    cursor: pointer;
+    float:right;
+    text-align: center;
+    width: 5%;
+    margin: -10px;
+    padding: 10px;
+    transition: 0.5s;
+    font-weight: bold;
+    font-family: cursive;
+}
+#divAdd  span:hover {
+    background-color: red;
+    color: #fff;
+}
+
+
+.checked {
+    background-color: rgba(19, 224, 105, 0.562);
+    text-decoration: line-through;
+}
